@@ -1,6 +1,5 @@
 "use client"
 
-import { Users, Lightbulb, Target } from "lucide-react"
 import Image from "next/image"
 
 export default function AboutMissionSection() {
