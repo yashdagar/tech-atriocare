@@ -4,6 +4,7 @@ import {useEffect, useState} from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,14 +42,16 @@ export default function Navbar() {
     <nav className={`${headerScrolled? "bg-[#328c98]": "bg-white"} shadow-lg sticky top-0 z-50`}>
       <div className="mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
         <div className="flex justify-between items-center h-16">
-          <div className="flex">
-            <Image src="/logo.webp" width={64} height={64} alt="Tech Atriocare Logo" className="h-10" />
-            <span className={`${headerScrolled? "text-white": "text-gray-900"} text-xl font-bold flex items-end mb-0.5 ml-1`}>
-              Tech Atriocare
-            </span>
-          </div>
+          <Link href="/">
+            <div className="flex">
+              <Image src="/logo.webp" width={64} height={64} alt="Tech Atriocare Logo" className="h-10" />
+              <span className={`${headerScrolled? "text-white": "text-gray-900"} text-xl font-bold flex items-end mb-0.5 ml-1`}>
+                Tech Atriocare
+              </span>
+            </div>
+          </Link>
 
-          {/* Desktop Navigation */}
+            {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (

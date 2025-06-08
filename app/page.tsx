@@ -10,14 +10,12 @@ import FAQSection from "@/components/faq"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
       <HeroSection />
-      <RecognitionsSection />
       <ProductsSection />
       <RnDSection />
       <BlogsSection />
+      <RecognitionsSection />
       <FAQSection />
-      <Footer />
     </main>
   )
 }

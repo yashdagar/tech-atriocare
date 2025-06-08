@@ -53,7 +53,7 @@ export default function BlogPage({ params }: BlogPageProps) {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gray-50 border-b">
+      <div className="bg-secondary border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Link href="/#blog">
             <Button variant="ghost" className="mb-6">
@@ -80,7 +80,7 @@ export default function BlogPage({ params }: BlogPageProps) {
       </div>
 
       {/* Featured Image */}
-      {/* {post.metadata.image && (
+      {post.metadata.image && post.metadata.image != 'null' && (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="aspect-video relative overflow-hidden rounded-lg">
             <Image
@@ -91,7 +91,7 @@ export default function BlogPage({ params }: BlogPageProps) {
             />
           </div>
         </div>
-      )} */}
+      )}
 
       {/* Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
