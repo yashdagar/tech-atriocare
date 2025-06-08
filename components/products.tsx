@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
-import {ExternalLink} from "lucide-react";
+import {ArrowUpRight} from "lucide-react";
 
 export default function ProductsSection() {
   const products = [
@@ -50,7 +50,7 @@ export default function ProductsSection() {
                   <CardDescription className="text-lg font-medium">{product.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <Button className="bg-[#328c98] hover:bg-[#2a7580] text-white">{product.buttonText} <ExternalLink /></Button>
+                  <Button className="bg-[#328c98] hover:bg-[#2a7580] text-white">{product.buttonText} <ArrowUpRight /></Button>
                 </CardContent>
               </Card>
             )
