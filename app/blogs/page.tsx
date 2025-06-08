@@ -1,31 +1,21 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Calendar, ArrowRight, ArrowUpRight } from "lucide-react"
+import { Calendar, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import { getTopBlogPosts } from "@/lib/blog_utils"
+import { getBlogPosts } from "@/lib/blog_utils"
 import Image from "next/image"
 
-export default function BlogsSection() {
-  const blogs = getTopBlogPosts()
+export default function BlogsPage() {
+  const blogs = getBlogPosts()
 
   return (
     <section id="blog" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Blogs</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Latest Blogs</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Insights and updates from our research and development
           </p>
-        </div>
-
-        <div className="flex justify-between items-center mb-8">
-          <h3 className="text-2xl font-semibold text-gray-900">Top blogs</h3>
-          <Link href="/blogs">
-            <Button variant="outline" className="group">
-              View all blogs
-              <ArrowUpRight className="h-4 w-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </Button>
-          </Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

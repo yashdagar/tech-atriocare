@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -18,10 +19,12 @@ export default function HeroSection() {
           <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed italic">
             &#34;In the atrium of innovation, research and development craft the wonders of tomorrow&#34;
           </p>
-          <button type="button"
-                  className="bg-white text-[#328c98] font-semibold px-8 py-3 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-gray-100 shadow-lg shadow-gray-200/50 rounded-lg text-sm text-center me-2 mb-2 ">
-            Explore Our Innovation
-          </button>
+          <Link  href="#products">
+            <button type="button"
+              className="bg-white cursor-pointer text-[#328c98] font-semibold px-8 py-3 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-gray-100 shadow-lg shadow-gray-200/50 rounded-lg text-sm text-center me-2 mb-2 ">
+              Explore Our Innovation
+            </button>
+          </Link>
         </div>
       </div>
     </section>

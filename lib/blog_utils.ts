@@ -52,8 +52,24 @@ function getMDXData(dir: string) {
   });
 }
 
+function getMDXDataWithoutContent(dir: string) {
+  const mdxFiles = getMDXFiles(dir);
+  return mdxFiles.map((file) => {
+    const { metadata } = readMDXFile(path.join(dir, file));
+    const slug = path.basename(file, path.extname(file));
+    return {
+      metadata,
+      slug,
+    };
+  });
+}
+
 export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), "app", "blogs", "data"));
+}
+
+export function getTopBlogPosts() {
+  return getMDXDataWithoutContent(path.join(process.cwd(), "app", "blogs", "data")).slice(0, 3);
 }
 
 export function getBlogPost(slug: string) {
