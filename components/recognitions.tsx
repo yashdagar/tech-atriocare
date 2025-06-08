@@ -1,5 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card"
-
 export default function RecognitionsSection() {
   const recognitions = [
     { name: "TATA 1MG", logo: "/1mg.webp" },

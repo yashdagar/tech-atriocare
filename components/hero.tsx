@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button"
-
 export default function HeroSection() {
   return (
     <section id="home" className="bg-gradient-to-br from-[#328c98] to-[#88cbd4] text-white py-20 h-[80vh] my-auto flex items-center">

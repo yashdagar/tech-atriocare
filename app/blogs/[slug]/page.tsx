@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 import { MDXRemote } from "next-mdx-remote/rsc"
-import { Calendar, ArrowLeft, ExternalLink } from "lucide-react"
+import { Calendar, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
