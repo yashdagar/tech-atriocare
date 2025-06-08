@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className="flex">
               <Image src="/logo.webp" width={64} height={64} alt="Tech Atriocare Logo" className="h-10" />
               <span className={`${headerScrolled? "text-white": "text-[#328c98]"} text-xl font-bold flex items-end mb-0.5 ml-1`}>
-                Tech Atriocare
+                TECH ATRIOCARE
               </span>
             </div>
           </Link>
