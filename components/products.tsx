@@ -14,7 +14,7 @@ export default function ProductsSection() {
       color: "bg-green-100 text-green-600",
     },
     {
-      name: "Vsync",
+      name: "V-sync",
       description: "Relationship Wellness",
       image: '/vsync.webp',
       buttonText: "Get Started",
@@ -22,7 +22,7 @@ export default function ProductsSection() {
       color: "bg-pink-100 text-pink-600",
     },
     {
-      name: "Novicule TA",
+      name: "NOVICULE-TA",
       description: "Personalized Wellness Companion",
       image: '/novicule.webp',
       buttonText: "Buy Now",
