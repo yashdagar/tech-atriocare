@@ -7,14 +7,14 @@ import Image from "next/image"
 import { getBlogPosts } from "@/lib/blog_utils"
 
 interface BlogPageProps {
-  params: {
-    slug: string
-  }
+  params: Promise<{ 
+    slug: string 
+  }>
 }
 
 // Generate static params for all blog posts
 export async function generateStaticParams() {
-  const posts = getBlogPosts()
+  const posts = await getBlogPosts()
   return posts.map((post) => ({
     slug: post.slug,
   }))
@@ -22,8 +22,9 @@ export async function generateStaticParams() {
 
 // Generate metadata for each blog post
 export async function generateMetadata({ params }: BlogPageProps) {
-  const posts = getBlogPosts()
-  const post = posts.find((post) => post.slug === params.slug)
+  const posts = await getBlogPosts()
+  const resolvedParams = await params
+  const post = posts.find((post) => post.slug === resolvedParams.slug)
 
   if (!post) {
     return {
@@ -42,9 +43,10 @@ export async function generateMetadata({ params }: BlogPageProps) {
   }
 }
 
-export default function BlogPage({ params }: BlogPageProps) {
-  const posts = getBlogPosts()
-  const post = posts.find((post) => post.slug === params.slug)
+export default async function BlogPage({ params }: BlogPageProps) {
+  const posts = await getBlogPosts()
+  const resolvedParams = await params
+  const post = posts.find((post) => post.slug === resolvedParams.slug)
 
   if (!post) {
     notFound()

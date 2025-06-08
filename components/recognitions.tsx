@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function RecognitionsSection() {
   const recognitions = [
     { name: "TATA 1MG", logo: "/1mg.webp" },
@@ -22,10 +24,12 @@ export default function RecognitionsSection() {
             <div key={index} className="text-center">
               <div className="p-6">
                 <div className="h-32 flex justify-center">
-                  <img
+                  <Image
                     src={recognition.logo || "/placeholder.svg"}
+                    width="128"
+                    height="128"
                     alt={recognition.name}
-                    className="max-w-32 h-fit mx-auto my-auto! mb-4 brightness-10 saturate-100 hover:brightness-100 hover:saturate-50 transition-all"
+                    className={`max-w-32 h-fit mx-auto my-auto! mb-4${/* brightness-10 saturate-100 hover:brightness-100 hover:saturate-50*/""} transition-all`}
                   />
                 </div>
                 <p className="text-sm font-medium text-gray-700">{recognition.name}</p>

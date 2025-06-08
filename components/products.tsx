@@ -48,7 +48,6 @@ export default function ProductsSection() {
                   </div>
                   <CardTitle className="text-xl font-bold text-[#328c98]">{product.name}</CardTitle>
                   <CardDescription className="text-lg font-medium">{product.description}</CardDescription>
-                  {product.subtitle && <p className="text-sm text-gray-600 mt-2">{product.subtitle}</p>}
                 </CardHeader>
                 <CardContent className="text-center">
                   <Button className="bg-[#328c98] hover:bg-[#2a7580] text-white">{product.buttonText} <ExternalLink /></Button>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { getBlogPosts } from "@/lib/blog_utils"
+import Image from "next/image"
 
 export default function BlogsSection() {
   const blogs = getBlogPosts()
@@ -18,11 +19,13 @@ export default function BlogsSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {blogs.map((blog, index) => (
+          {blogs.map((blog) => (
             <Card key={blog.metadata.id} className="hover:shadow-lg transition-shadow">
               <div className="aspect-video overflow-hidden rounded-t-lg">
-                <img 
-                  src={blog.metadata.image || "/placeholder.svg?height=200&width=300"} 
+                <Image 
+                  width="300"
+                  height="200"
+                  src={blog.metadata.image!} 
                   alt={blog.metadata.title} 
                   className="w-full h-full object-cover" 
                 />

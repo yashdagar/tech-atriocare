@@ -1,13 +1,17 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section id="home" className="bg-gradient-to-br from-[#328c98] to-[#88cbd4] text-white py-20 h-[80vh] my-auto flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
-            <img
-                src="/hero.webp"
-                alt="Tech Atriocare Logo"
-                className="mx-auto w-64 mb-6"
+            <Image
+              width="256"
+              height="158"
+              src="/hero.webp"
+              alt="Tech Atriocare Logo"
+              className="mx-auto w-64 mb-6"
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">Tech Atriocare</h1>
