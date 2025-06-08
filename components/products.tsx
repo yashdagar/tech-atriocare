@@ -10,6 +10,7 @@ export default function ProductsSection() {
       description: "World's first digital gym for heart and lung wellness",
       image: '/haal_chaal_pravartak.webp',
       buttonText: "View More",
+      link: "https://wa.me/message/BBU6IKOD66DHK1?src=qr",
       color: "bg-green-100 text-green-600",
     },
     {
@@ -17,6 +18,7 @@ export default function ProductsSection() {
       description: "Relationship Wellness",
       image: '/vsync.webp',
       buttonText: "Get Started",
+      link: "https://vsync.techatriocare.com/",
       color: "bg-pink-100 text-pink-600",
     },
     {
@@ -24,6 +26,7 @@ export default function ProductsSection() {
       description: "Personalized Wellness Companion",
       image: '/novicule.webp',
       buttonText: "Buy Now",
+      link: "https://noviculeta-16.mini.site/products/674bb0f8-169f-4537-9d25-94c3f51cf3fb",
       color: "bg-blue-100 text-blue-600",
     },
   ]
@@ -52,7 +55,7 @@ export default function ProductsSection() {
                 <CardContent className="text-center">
                   <Button className="bg-[#328c98] hover:bg-[#2a7580] text-white group">
                     {product.buttonText} 
-                    <ArrowUpRight className="h-4 w-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-1 transition-transform"/>
+                    <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-1 transition-transform"/>
                   </Button>
                 </CardContent>
               </Card>

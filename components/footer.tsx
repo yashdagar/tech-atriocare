@@ -1,6 +1,22 @@
-import { Instagram, Linkedin, Mail, MapPin } from "lucide-react"
+import { ArrowUpRight, Instagram, Linkedin, Mail, MapPin } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
+  const products = [
+    {
+      name: "V-sync",
+      link: "https://vsync.techatriocare.com/",
+    },
+    {
+      name: "Haal-Chaal Pravartak",
+      link: "https://wa.me/message/BBU6IKOD66DHK1?src=qr",
+    },
+    {
+      name: "Novicule-TA",
+      link: "https://noviculeta-16.mini.site/products/674bb0f8-169f-4537-9d25-94c3f51cf3fb",
+    },
+  ]
+
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,21 +25,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-[#88cbd4]">Products</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-[#88cbd4] transition-colors">
-                  V-sync
-                </a>
+              {
+                products.map((product) => (
+                  <li key={product.name}>
+                <Link href={product.link} className="hover:text-[#88cbd4] transition-colors group flex">
+                  {product.name}
+                  <ArrowUpRight className="h-4 w-4 ml-2 -translate-x-0.5 group-hover:translate-x-0 translate-y-1 group-hover:translate-y-0 transition-transform"/>
+                </Link>
               </li>
-              <li>
-                <a href="#" className="hover:text-[#88cbd4] transition-colors">
-                  Haal-Chaal Pravartak
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#88cbd4] transition-colors">
-                  Novicule-TA
-                </a>
-              </li>
+                ))
+              }
             </ul>
           </div>
 
@@ -31,12 +42,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-[#88cbd4]">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-[#88cbd4] transition-colors">
+              <Link href="https://www.instagram.com/tech.atriocare/" className="hover:text-[#88cbd4] transition-colors">
                 <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="hover:text-[#88cbd4] transition-colors">
+              </Link>
+              <Link href="https://www.linkedin.com/company/tech-atriocare/" className="hover:text-[#88cbd4] transition-colors">
                 <Linkedin className="h-6 w-6" />
-              </a>
+              </Link>
             </div>
           </div>
 

@@ -23,7 +23,7 @@ export default function BlogsSection() {
           <Link href="/blogs">
             <Button variant="outline" className="group">
               View all blogs
-              <ArrowUpRight className="h-4 w-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              <ArrowUpRight className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </Button>
           </Link>
         </div>
@@ -56,7 +56,7 @@ export default function BlogsSection() {
                 <Link href={`/blogs/${blog.metadata.id}`}>
                   <Button variant="outline" className="w-full group">
                     Read More
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
               </CardContent>
