@@ -20,8 +20,8 @@ export default function BlogsSection() {
 
         <div className="flex justify-between items-center mb-8">
           <h3 className="text-2xl font-semibold text-gray-900">Top blogs</h3>
-          <Link href="/blogs">
-            <Button variant="outline" className="group">
+          <Link href="/blogs" aria-label="View All Blogs">
+            <Button variant="outline" className="group" aria-label="View All Blogs">
               View all blogs
               <ArrowUpRight className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </Button>
@@ -53,9 +53,9 @@ export default function BlogsSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href={`/blogs/${blog.metadata.id}`}>
-                  <Button variant="outline" className="w-full group">
-                    Read More
+                <Link href={`/blogs/${blog.metadata.id}`} aria-label="Read Blog">
+                  <Button variant="outline" className="w-full group" aria-label="Read Blog">
+                    Read Blog
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>

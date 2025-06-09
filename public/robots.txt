@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Optional: Add sitemap location
+Sitemap: https://techatriocare.com/sitemap.xml

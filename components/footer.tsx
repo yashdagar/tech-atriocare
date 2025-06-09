@@ -28,7 +28,7 @@ export default function Footer() {
               {
                 products.map((product) => (
                   <li key={product.name}>
-                <Link href={product.link} className="hover:text-[#88cbd4] transition-colors group flex">
+                <Link href={product.link} className="hover:text-[#88cbd4] transition-colors group flex" aria-label={product.name}>
                   {product.name}
                   <ArrowUpRight className="h-4 w-4 ml-2 -translate-x-0.5 group-hover:translate-x-0 translate-y-1 group-hover:translate-y-0 transition-transform"/>
                 </Link>
@@ -42,10 +42,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-[#88cbd4]">Follow Us</h3>
             <div className="flex space-x-4">
-              <Link href="https://www.instagram.com/tech.atriocare/" className="hover:text-[#88cbd4] transition-colors">
+              <Link href="https://www.instagram.com/tech.atriocare/" aria-label="Instagram" className="hover:text-[#88cbd4] transition-colors">
                 <Instagram className="h-6 w-6" />
               </Link>
-              <Link href="https://www.linkedin.com/company/tech-atriocare/" className="hover:text-[#88cbd4] transition-colors">
+              <Link href="https://www.linkedin.com/company/tech-atriocare/" aria-label="Linkedin" className="hover:text-[#88cbd4] transition-colors">
                 <Linkedin className="h-6 w-6" />
               </Link>
             </div>
@@ -81,12 +81,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-[#88cbd4]">Email</h3>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
-              <a
+              <Link
+                aria-label="mail to service.techatriocare@gmail.com"
                 href="mailto:service.techatriocare@gmail.com"
                 className="hover:text-[#88cbd4] transition-colors text-sm"
               >
                 service.techatriocare@gmail.com
-              </a>
+              </Link>
             </div>
           </div>
         </div>

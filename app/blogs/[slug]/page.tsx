@@ -57,8 +57,8 @@ export default async function BlogPage({ params }: BlogPageProps) {
       {/* Header */}
       <div className="bg-secondary border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href="/#blog">
-            <Button variant="ghost" className="mb-6">
+          <Link href="/#blog" aria-label="Back to Blogs">
+            <Button variant="ghost" className="mb-6" aria-label="Back to Blogs">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Blogs
             </Button>
@@ -105,8 +105,8 @@ export default async function BlogPage({ params }: BlogPageProps) {
       {/* Navigation */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t">
         <div className="flex justify-between items-center">
-          <Link href="/#blog">
-            <Button variant="outline">
+          <Link href="/#blog" aria-label="Back to All Blogs">
+            <Button variant="outline" aria-label="Back to All Blogs">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to All Blogs
             </Button>

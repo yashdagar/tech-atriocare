@@ -43,9 +43,9 @@ export default function BlogsPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href={`/blogs/${blog.metadata.id}`}>
-                  <Button variant="outline" className="w-full group">
-                    Read More
+                <Link href={`/blogs/${blog.metadata.id}`} aria-label="Read blog">
+                  <Button variant="outline" className="w-full group" aria-label="Read blog">
+                    Read Blog
                     <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>

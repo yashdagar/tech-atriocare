@@ -53,7 +53,7 @@ export default function ProductsSection() {
                   <CardDescription className="text-lg font-medium">{product.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <Button className="bg-[#328c98] hover:bg-[#2a7580] text-white group">
+                  <Button className="bg-[#328c98] hover:bg-[#2a7580] text-white group" aria-label={product.buttonText}>
                     {product.buttonText} 
                     <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-1 transition-transform"/>
                   </Button>

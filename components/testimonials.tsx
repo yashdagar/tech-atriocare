@@ -106,8 +106,8 @@ export default function TestimonialsSection() {
             <p className="text-gray-600 mb-6">
               Join thousands of satisfied customers who&apos;ve found relief with Novicule TA
             </p>
-            <Link href="https://noviculeta-16.mini.site/products/674bb0f8-169f-4537-9d25-94c3f51cf3fb">
-              <button className="bg-[#328c98] cursor-pointer text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+            <Link href="https://noviculeta-16.mini.site/products/674bb0f8-169f-4537-9d25-94c3f51cf3fb" aria-label="Order Now">
+              <button aria-label="Order Now" className="bg-[#328c98] cursor-pointer text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
                 Order Now
               </button>
             </Link>
