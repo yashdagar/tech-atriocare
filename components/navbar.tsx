@@ -39,7 +39,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`${headerScrolled? "bg-[#328c98]": "bg-white"} shadow-lg sticky top-0 z-50`}>
+    <nav className={`${headerScrolled? "bg-secondary": "bg-white"} shadow-lg sticky top-0 z-50`}>
       <div className="mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
         <div className="flex justify-between items-center h-16">
           <Link href="/" aria-label="Tech Atriocare">
@@ -50,7 +50,7 @@ export default function Navbar() {
                 alt="Tech Atriocare Logo" 
                 className="h-10" 
                 priority />
-              <span className={`${headerScrolled? "text-white": "text-[#328c98]"} text-xl font-bold flex items-end mb-0.5 ml-1`}>
+              <span className={`${headerScrolled? "text-white": "text-secondary"} text-xl font-bold flex items-end mb-0.5 ml-1`}>
                 TECH ATRIOCARE
               </span>
             </div>
@@ -64,7 +64,7 @@ export default function Navbar() {
                   aria-label={item.name}
                   key={item.name}
                   href={item.href}
-                  className={`${headerScrolled? "text-white": "text-gray-900"} hover:text-[#328c98] px-3 py-2 text-sm font-bold transition-colors`}
+                  className={`${headerScrolled? "text-white": "text-gray-900"} hover:text-secondary px-3 py-2 text-sm font-bold transition-colors`}
                 >
                   {item.name}
                 </Link>
@@ -89,7 +89,7 @@ export default function Navbar() {
                   aria-label={item.name}
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-[#328c98] block px-3 py-2 text-base font-medium"
+                  className="text-gray-700 hover:text-secondary block px-3 py-2 text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

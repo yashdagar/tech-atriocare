@@ -42,12 +42,12 @@ export default function RnDSection() {
           {areas.map((area, index) => {
             const IconComponent = area.icon
             return (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow border-2 border-[#88cbd4]/20">
+              <Card key={index} className="text-center hover:shadow-lg transition-shadow border-2 border-primary/20">
                 <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-[#88cbd4]/20 flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="h-8 w-8 text-[#328c98]" />
+                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="h-8 w-8 text-secondary" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-[#328c98]">{area.title}</CardTitle>
+                  <CardTitle className="text-xl font-bold text-secondary">{area.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="mt-auto">
                   <p className="text-gray-600">{area.description}</p>

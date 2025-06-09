@@ -49,11 +49,11 @@ export default function ProductsSection() {
                   >
                     <Image src={product.image} width="256" height="128" alt={product.name} />
                   </div>
-                  <CardTitle className="text-xl font-bold text-[#328c98]">{product.name}</CardTitle>
+                  <CardTitle className="text-xl font-bold text-secondary">{product.name}</CardTitle>
                   <CardDescription className="text-lg font-medium">{product.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <Button className="bg-[#328c98] hover:bg-[#2a7580] text-white group" aria-label={product.buttonText}>
+                  <Button className="bg-secondary hover:bg-secondary/90 text-white group" aria-label={product.buttonText}>
                     {product.buttonText} 
                     <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-1 transition-transform"/>
                   </Button>
