@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
 import {ArrowUpRight} from "lucide-react";
+import Link from "next/link";
 
 export default function ProductsSection() {
   const products = [
@@ -94,16 +95,18 @@ export default function ProductsSection() {
 
               <CardContent className="relative text-center pb-0 px-8 mt-auto">
                 {/* CTA Button */}
-                <Button 
-                  className="bg-secondary hover:bg-secondary/90 text-white group/btn relative overflow-hidden px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300" 
-                  aria-label={product.buttonText}
-                >
-                  <span className="relative z-10 flex items-center">
-                    {product.buttonText} 
-                    <ArrowUpRight className="h-4 w-4 ml-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300"/>
-                  </span>
-                  <div className={`absolute inset-0 bg-gradient-to-r ${product.accent} opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300`}></div>
-                </Button>
+                <Link href={product.link} aria-label={product.buttonText}>
+                  <Button 
+                    className="bg-secondary hover:bg-secondary/90 text-white group/btn relative overflow-hidden px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300" 
+                    aria-label={product.buttonText}
+                  >
+                    <span className="relative z-10 flex items-center">
+                      {product.buttonText} 
+                      <ArrowUpRight className="h-4 w-4 ml-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300"/>
+                    </span>
+                    <div className={`absolute inset-0 bg-gradient-to-r ${product.accent} opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300`}></div>
+                  </Button>
+                </Link>
 
                 {/* Hover indicator line */}
                 <div className={`mt-6 h-1 w-0 bg-gradient-to-r ${product.accent} rounded-full mx-auto group-hover:w-20 transition-all duration-500 ease-out`}></div>
