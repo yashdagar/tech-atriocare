@@ -68,7 +68,7 @@ const TeamSection: React.FC = () => {
                 <p className="text-blue-600 font-medium mb-4">Director (Logistics)</p>
                 <div>
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    Mr. Subhash holds the work experience of around 34 years in the sales and service sector of electronic items. He has worked as an on-field service engineer in reputed companies like LG, Videocon, TCL, and T-series before working as a self-employed service engineer. He is currently associated with the founder's office and offers his advisory as well as support for the on-field logistical operations.
+                    Mr. Subhash holds the work experience of around 34 years in the sales and service sector of electronic items. He has worked as an on-field service engineer in reputed companies like LG, Videocon, TCL, and T-series before working as a self-employed service engineer. He is currently associated with the founder&apos;s office and offers his advisory as well as support for the on-field logistical operations.
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const TeamSection: React.FC = () => {
                 <h4 className="text-xl font-semibold mt-3 mb-2">Sanya Mishra</h4>
                 <p className="text-blue-600 font-medium mb-4">R & D Associate (Tech Head)</p>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Sanya spearheads the technical direction of digital health projects at Tech Atriocare Pvt. Ltd. She started her journey as an intern, working on website modifications, and quickly showcased her technical expertise. Her dedication to research and development, combined with her resilience, has earned her a leadership role, overseeing the technical aspects of the company's digital health initiatives. With a strong foundation in Computer Science and areas of interest in AI/ML (Deep Learning, NLP), AWS, and full-stack web development, Sanya drives the delivery of innovative solutions. Her technical acumen ensures seamless project execution, fostering a culture of innovation and excellence.
+                  Sanya spearheads the technical direction of digital health projects at Tech Atriocare Pvt. Ltd. She started her journey as an intern, working on website modifications, and quickly showcased her technical expertise. Her dedication to research and development, combined with her resilience, has earned her a leadership role, overseeing the technical aspects of the company&apos;s digital health initiatives. With a strong foundation in Computer Science and areas of interest in AI/ML (Deep Learning, NLP), AWS, and full-stack web development, Sanya drives the delivery of innovative solutions. Her technical acumen ensures seamless project execution, fostering a culture of innovation and excellence.
                 </p>
               </div>
             </div>
