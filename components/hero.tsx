@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="bg-gradient-to-br from-secondary to-primary text-white py-20 h-[80vh] my-auto flex items-center">
+    <section id="home" className="bg-gradient-to-br from-secondary to-primary text-white h-[80vh] my-auto flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">

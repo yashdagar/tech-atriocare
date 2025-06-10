@@ -8,43 +8,48 @@ export default function TestimonialsSection() {
       timeAgo: "2 months ago",
       content: "I wasn't expecting much when I first tried Novicule TA, but wow—it really works! I came down with the flu and felt completely drained, but after taking it, I started feeling better way faster than usual. My congestion eased, the fatigue reduced, and within a day or two, I was back on my feet. It's definitely a must-have for flu season! Super convenient, effective, and something I'll be keeping stocked from now on. Highly recommend it to anyone who wants quick and reliable relief!",
       rotation: "rotate-2",
-      color: "bg-red-50 border-red-200"
+      color: "bg-emerald-50 border-emerald-200",
+      accent: "from-emerald-500 to-teal-500"
     },
     {
       name: "Siddhartha Chandra",
       timeAgo: "a month ago",
       content: "Never before have I come across any flu fighting option to cut through the root cause in as little as one day! I had a 10k race to pace on Sunday, and I got my hands on Novicule-TA on Friday. On Friday I was down with a severe throat congestion and weakness and felt unsure about being able to run. All it took was 1 sachet on Friday night to restore my health and confidence. Not only did I run the race in prime conditions, but also honored the time commitment of completing in 70 mins. My utmost gratitude to the creators of Novicule-TA. I would highly recommend keeping a few packets handy in your medical box.",
       rotation: "-rotate-1",
-      color: "bg-blue-50 border-blue-200"
+      color: "bg-pink-50 border-pink-200",
+      accent: "from-fuchsia-500 to-purple-600"
     },
     {
       name: "Lasya N",
       timeAgo: "2 months ago",
       content: "I recently used Novicule TA when I caught a flu, and I was impressed with how quickly it worked! My fever dropped, body aches eased, and I felt more energetic in no time. What I loved most is how easy it is to use and how well it keeps symptoms under control. I've tried other remedies before, but Novicule TA truly delivers both fast relief and lasting benefits. Definitely keeping this on hand—highly recommend it!",
       rotation: "rotate-3",
-      color: "bg-green-50 border-green-200"
+      color: "bg-blue-50 border-blue-200",
+      accent: "from-blue-700 to-indigo-500"
     },
     {
       name: "Eakta Kandpal",
       timeAgo: "3 months ago",
       content: "I had been having a cough for many days, and it would get worse at night as soon as I tried to sleep. I tried cough syrup, but it didn't have any effect. Then I started taking these sachets before bedtime. After taking 6 sachets, my cough completely disappeared. I am also highly allergic to cold weather and dust, which causes me to cough frequently. But after taking these sachets, I feel much better, and my nighttime cough completely stopped. I will definitely recommend this product. If you have a persistent cough problem, please try it.",
       rotation: "-rotate-2",
-      color: "bg-purple-50 border-purple-200"
+      color: "bg-orange-50 border-orange-200",
+      accent: "from-orange-500 to-red-500"
     },
     {
       name: "Tanushree Shrivastav",
       timeAgo: "2 months ago",
       content: "I've struggled with recurring colds and coughs due to weather changes for years. However, I've always avoided antibiotics. Luckily, Tarun Adarsh introduced me to Novicule, and I saw instant results after trying it. For the past 6 months, I've stopped relying on medicines and instead opt for Novicule. Simply tearing open a sachet and consuming it helps me recover overnight – it's truly a remarkable solution!",
       rotation: "rotate-1",
-      color: "bg-yellow-50 border-yellow-200"
+      color: "bg-green-50 border-green-200",
+      accent: "from-green-500 to-lime-500"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+    <section id='testimonials' className="bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2>
             What Our Customers Say
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">

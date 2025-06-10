@@ -115,8 +115,18 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
+  }
+  section{
+    scroll-margin-top: 5rem;
+    @apply relative pt-16 pb-12 overflow-hidden;
+  }
+  h2{
+    @apply text-4xl md:text-5xl font-bold text-gray-900 mb-4;
   }
   p{
     @apply my-2;
@@ -128,4 +138,11 @@
 @keyframes marquee {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
 }

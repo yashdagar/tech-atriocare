@@ -58,23 +58,23 @@ export default async function BlogPage({ params }: BlogPageProps) {
       <div className="bg-secondary border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Link href="/#blog" aria-label="Back to Blogs">
-            <Button variant="ghost" className="mb-6" aria-label="Back to Blogs">
-              <ArrowLeft className="h-4 w-4 mr-2" />
+            <Button variant="ghost" className="mb-6 text-gray-100" aria-label="Back to Blogs">
+              <ArrowLeft className="h-4 w-4 mr-2 text-gray-100" />
               Back to Blogs
             </Button>
           </Link>
           
           <div className="space-y-4">
-            <div className="flex items-center text-sm text-gray-500">
+            <div className="flex items-center text-sm text-gray-300">
               <Calendar className="h-4 w-4 mr-2" />
               {post.metadata.date}
             </div>
             
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-100">
               {post.metadata.title}
             </h1>
             
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-300 leading-relaxed">
               {post.metadata.excerpt}
             </p>
           </div>

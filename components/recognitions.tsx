@@ -12,10 +12,10 @@ export default function RecognitionsSection() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="bg-white">
       <div className="mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Recognitions & Partnerships</h2>
+          <h2>Recognitions & Partnerships</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">Trusted by leading organizations and institutions</p>
         </div>
 
