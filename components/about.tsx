@@ -59,7 +59,7 @@ export default function AboutMissionSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-8">
           <h2>About Our Mission</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Discover the journey that drives our commitment to revolutionizing health and wellness through technology
@@ -85,7 +85,7 @@ export default function AboutMissionSection() {
                   }}
                 >
                   {/* Card */}
-                  <Card className={`relative bg-white/80 backdrop-blur-sm border-0 border border-gray-200 shadow-xl/5 rounded-2xl overflow-hidden w-full max-w-xs ${isEven ? 'lg:mb-8' : 'lg:mt-8'}`}>
+                  <Card className={`relative gap-y-0 bg-white/80 backdrop-blur-sm border-0 border border-gray-200 shadow-xl/5 rounded-2xl overflow-hidden w-full max-w-xs ${isEven ? 'lg:mb-8' : 'lg:mt-8'}`}>
                     <CardHeader className="relative text-center px-6">
                       {/* Image container */}
                       <div className={`relative w-28 h-28 ${card.iconBg} rounded-2xl flex items-center justify-center mx-auto mb-4 overflow-hidden`}>
@@ -105,7 +105,7 @@ export default function AboutMissionSection() {
                       </CardTitle>
                     </CardHeader>
 
-                    <CardContent className="relative text-center pb-6 px-6">
+                    <CardContent className="relative text-center px-6">
                       {/* Content */}
                       <p className="text-sm text-gray-700 leading-relaxed">
                         {card.content}

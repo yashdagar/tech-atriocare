@@ -4,18 +4,18 @@ import { Dna, Leaf, Brain, Heart, Activity } from "lucide-react"
 export default function RnDSection() {
   const areas = [
     {
-      title: "AI/ML based Digital Healthcare",
-      icon: Brain,
-      description: "Leveraging artificial intelligence for personalized healthcare solutions",
-      accent: "from-emerald-500 to-teal-500",
-      iconBg: "bg-emerald-50",
-    },
-    {
       title: "Health & Wellness",
       icon: Heart,
       description: "Comprehensive wellness solutions for holistic health management",
       accent: "from-fuchsia-500 to-purple-600",
       iconBg: "bg-pink-50",
+    },
+    {
+      title: "AI/ML based Digital Healthcare",
+      icon: Brain,
+      description: "Leveraging artificial intelligence for personalized healthcare solutions",
+      accent: "from-emerald-500 to-teal-500",
+      iconBg: "bg-emerald-50",
     },
     {
       title: "Health Tech",
@@ -50,7 +50,7 @@ export default function RnDSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-8">
           <h2>Areas of R&D</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Pioneering research in cutting-edge technologies for next-generation healthcare solutions
@@ -77,8 +77,8 @@ export default function RnDSection() {
                   }}
                 >
                   {/* Card */}
-                  <Card className={`relative bg-white/80 backdrop-blur-sm border-0 border border-gray-200 shadow-xl/5 rounded-2xl overflow-hidden w-full max-w-xs ${isEven ? 'lg:mb-8' : 'lg:mt-8'}`}>
-                    <CardHeader className="relative text-center p-6">
+                  <Card className={`relative bg-white/80 gap-y-0 backdrop-blur-sm border-0 border border-gray-200 shadow-xl/5 rounded-2xl overflow-hidden w-full max-w-xs ${isEven ? 'lg:mb-4' : 'lg:mt-4'}`}>
+                    <CardHeader className="relative text-center px-6">
                       {/* Icon container */}
                       <div className={`relative w-16 h-16 ${area.iconBg} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
                         <div className={`absolute inset-0 bg-gradient-to-br ${area.accent} opacity-20 rounded-2xl`}></div>
@@ -86,12 +86,12 @@ export default function RnDSection() {
                       </div>
 
                       {/* Title */}
-                      <CardTitle className="text-lg font-bold text-secondary mb-2">
+                      <CardTitle className="text-lg font-bold text-secondary">
                         {area.title}
                       </CardTitle>
                     </CardHeader>
 
-                    <CardContent className="relative text-center pb-6 px-6">
+                    <CardContent className="relative text-center pb-2 px-6">
                       {/* Description */}
                       <p className="text-sm text-gray-700 leading-relaxed">
                         {area.description}

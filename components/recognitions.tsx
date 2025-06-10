@@ -19,7 +19,7 @@ export default function RecognitionsSection() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">Trusted by leading organizations and institutions</p>
         </div>
 
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden mb-4">
           <div className="flex animate-[marquee_20s_linear_infinite] hover:animate-[marquee_20s_linear_infinite_paused] space-x-16 whitespace-nowrap">
             {/* First set of logos */}
             {recognitions.map((recognition, index) => (

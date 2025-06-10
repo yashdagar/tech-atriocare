@@ -44,7 +44,7 @@ export default function ProductsSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <h2>
             Our Products
           </h2>
@@ -68,7 +68,7 @@ export default function ProductsSection() {
                 <div className="h-full w-full bg-white rounded-2xl"></div>
               </div>
 
-              <CardHeader className="relative text-center p-8">
+              <CardHeader className="relative text-center py-4">
                 {/* Product image container */}
                 <div className={`relative w-48 h-48 ${product.iconBg} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden`}>
                   <div className={`absolute inset-0 bg-gradient-to-br ${product.accent} opacity-0 group-hover:opacity-20 transition-opacity duration-300`}></div>
@@ -92,7 +92,7 @@ export default function ProductsSection() {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="relative text-center pb-8 px-8 mt-auto">
+              <CardContent className="relative text-center pb-0 px-8 mt-auto">
                 {/* CTA Button */}
                 <Button 
                   className="bg-secondary hover:bg-secondary/90 text-white group/btn relative overflow-hidden px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300" 

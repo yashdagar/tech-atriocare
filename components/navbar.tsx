@@ -10,11 +10,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Products", href: "#products" },
-    { name: "Blog", href: "#blog" },
-    { name: "Team", href: "#team" },
+    { name: "Home", href: "/#home" },
+    { name: "About Us", href: "/#about" },
+    { name: "Products", href: "/#products" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "Team", href: "/team" },
   ]
 
   const [headerScrolled, setHeaderScrolled] = useState(false);
@@ -64,7 +64,7 @@ export default function Navbar() {
                   aria-label={item.name}
                   key={item.name}
                   href={item.href}
-                  className={`${headerScrolled? "text-white": "text-gray-900"} hover:text-secondary px-3 py-2 text-sm font-bold transition-colors`}
+                  className={`${headerScrolled? "text-gray-200": "text-gray-900"} hover:${headerScrolled? "text-white": "text-secondary"} px-3 py-2 text-sm font-bold transition-colors`}
                 >
                   {item.name}
                 </Link>
