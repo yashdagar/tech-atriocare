@@ -45,7 +45,7 @@ const TeamSection: React.FC = () => {
                   className="rounded-full mx-auto mb-4"
                 />
                 <h4 className="text-xl font-semibold mt-3 mb-2">Tarun Adarsh</h4>
-                <p className="text-blue-600 font-medium mb-4">Founder | Director of R & D | Product Innovation Strategist</p>
+                <p className="text-secondary font-medium mb-4">Founder | Director of R & D | Product Innovation Strategist</p>
                 <div>
                   <p className="text-gray-700 text-sm leading-relaxed">
                     Tarun Adarsh, founder of Tech Atriocare Private Limited, is a healthcare innovator with over five years of R&D experience. With expertise in microbiology, he has developed detection assays for sepsis, endotoxin, and COVID-19, as well as voice-based healthcare solutions. Collaborating with top institutions like IIT Delhi and JNU, he has authored four publications and filed two patents. Tarun has received prestigious fellowships and funding, and actively participates in events like Startup Mahakumbh and Shark Tank India. His current focus is on a voice-based personalized wellness platform. Tarun is also an experimental filmmaker with digital distribution success.
@@ -65,7 +65,7 @@ const TeamSection: React.FC = () => {
                   className="rounded-full mx-auto mb-4"
                 />
                 <h4 className="text-xl font-semibold mt-3 mb-2">Subhash Chandra Shrivastav</h4>
-                <p className="text-blue-600 font-medium mb-4">Director (Logistics)</p>
+                <p className="text-secondary font-medium mb-4">Director (Logistics)</p>
                 <div>
                   <p className="text-gray-700 text-sm leading-relaxed">
                     Mr. Subhash holds the work experience of around 34 years in the sales and service sector of electronic items. He has worked as an on-field service engineer in reputed companies like LG, Videocon, TCL, and T-series before working as a self-employed service engineer. He is currently associated with the founder&apos;s office and offers his advisory as well as support for the on-field logistical operations.
@@ -87,7 +87,7 @@ const TeamSection: React.FC = () => {
                   className="rounded-full mx-auto mb-4"
                 />
                 <h4 className="text-xl font-semibold mt-3 mb-2">Sanya Mishra</h4>
-                <p className="text-blue-600 font-medium mb-4">R & D Associate (Tech Head)</p>
+                <p className="text-secondary font-medium mb-4">R & D Associate (Tech Head)</p>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   Sanya spearheads the technical direction of digital health projects at Tech Atriocare Pvt. Ltd. She started her journey as an intern, working on website modifications, and quickly showcased her technical expertise. Her dedication to research and development, combined with her resilience, has earned her a leadership role, overseeing the technical aspects of the company&apos;s digital health initiatives. With a strong foundation in Computer Science and areas of interest in AI/ML (Deep Learning, NLP), AWS, and full-stack web development, Sanya drives the delivery of innovative solutions. Her technical acumen ensures seamless project execution, fostering a culture of innovation and excellence.
                 </p>
@@ -118,7 +118,7 @@ const TeamSection: React.FC = () => {
           />
           <div className="flex-1">
             <h4 className="text-xl font-semibold mb-2">Dr. Arpan Gupta</h4>
-            <p className="text-blue-600 font-medium mb-3">(Technology)</p>
+            <p className="text-secondary font-medium mb-3">(Technology)</p>
             <p className="text-gray-700 text-sm leading-relaxed">
               Dr. Arpan Gupta is an Associate Professor in the Department of Mechanical Engineering at IIT Delhi with research interests in metamaterials, acoustics, vibrations, and image processing for diagnostics. He has a Ph.D. from the National University of Singapore and a B. Tech in Mechanical Engineering from IIT Delhi. He has published several papers in reputed journals. His academic and industrial experience includes working as a Scientist at IHPC, Singapore, and Assistant Professor at IIT Mandi. His teaching interests include engineering visualization, vibrations, acoustics, FEM, and numerical methods.
             </p>
@@ -136,7 +136,7 @@ const TeamSection: React.FC = () => {
           />
           <div className="flex-1">
             <h4 className="text-xl font-semibold mb-2">Dr. Sarthak Chakravarty</h4>
-            <p className="text-blue-600 font-medium mb-3">(Clinical Support)</p>
+            <p className="text-secondary font-medium mb-3">(Clinical Support)</p>
             <p className="text-gray-700 text-sm leading-relaxed">
               Dr. Sarthak Chakravarty is a confident and disciplined physician with 10 years of experience in hospital and clinical settings, specializing in emergency medicine and minority groups. He holds a MBBS degree and various certifications in emergency medicine, tuberculosis management, and healthcare management. He has worked in various hospitals and clinics, including Indraprastha Apollo Hospital and Oriana Hospital Pvt. Ltd. Currently, he is a Consultant at TATA 1mg Healthcare Services Pvt. Ltd and runs his own private practice at Nirmal Medical Center.
             </p>
@@ -154,7 +154,7 @@ const TeamSection: React.FC = () => {
           />
           <div className="flex-1">
             <h4 className="text-xl font-semibold mb-2">Dr. Santanu Kar Mahapatra</h4>
-            <p className="text-blue-600 font-medium mb-3">(Research)</p>
+            <p className="text-secondary font-medium mb-3">(Research)</p>
             <p className="text-gray-700 text-sm leading-relaxed">
               Dr. Santanu Kar Mahapatra is an Associate Professor and Head of the Paramedical & Allied Health Science Department at Midnapore City College. He holds an M.Sc. in Human Physiology (2005) and a Ph.D. from Vidyasagar University (2010). Dr. Mahapatra specializes in Immunology, focusing on macrophage polarization and immune metabolism, as well as Physiology related to infectious diseases like Leishmania, Tuberculosis, and Malaria. He has extensive teaching experience and has worked in research roles at SCBT, SASTRA University, and Bose Institute. He has numerous publications, serves as a Ph.D. guide, and is involved in several research projects. He is a member of various scientific societies and has received prestigious awards, including the 2024 CRS Bronze Medal and the 2022 Dr. Siddhartha Debnath Memorial Oration.
             </p>

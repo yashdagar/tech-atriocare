@@ -10,7 +10,7 @@ export default function BlogsPage() {
 
   return (
     <section id="blog" className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2>Latest Blogs</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
