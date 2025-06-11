@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import HeroSection from "@/components/hero"
 import ProductsSection from "@/components/products"
 import RnDSection from "@/components/rnd"
