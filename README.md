@@ -7,18 +7,17 @@ A modern healthcare website built with cutting-edge web technologies to provide 
 - **Next.js** - React framework with TypeScript support
 - **TypeScript** - Type-safe JavaScript development
 - **Tailwind CSS** - Utility-first CSS framework
-- **Poppins Font** - Custom Google Font integration
-- **Tailwind CSS Animate** - Animation utilities (optional)
+- **Poppins Font** - Google Font integration
 
 ## Project Structure
 
-This project uses Next.js recommended settings with the modern **App Router** architecture (`/app` directory) for optimal performance and developer experience.
+This project uses Next.js recommended settings with the modern **App Router** architecture (`/app` directory).
 
 ## Installation & Setup
 
 ### Prerequisites
 - Node.js (version 16 or higher)
-- npm, yarn, or pnpm package manager
+- npm or yarn or pnpm package manager
 
 ### Install Dependencies
 ```bash
